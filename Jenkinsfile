@@ -6,5 +6,13 @@ pipeline{
                 echo "hello"
             }
         }
+
+        stage(npm){
+            steps{
+                npm --version
+                npm start
+            }
+        }
+        }
     }
 }
