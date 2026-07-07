@@ -1,16 +1,16 @@
 pipeline{
     agent any
     stages{
-        stage(hello){
+        stage('hello'){
             steps{
                 echo "hello"
             }
         }
 
-        stage(npm){
+        stage('npm'){
             steps{
-                npm --version
-                npm start
+               sh 'npm --version'
+               sh 'npm start'
             }
         }
         }
