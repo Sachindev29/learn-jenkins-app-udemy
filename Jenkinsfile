@@ -13,7 +13,7 @@ pipeline{
                 ls -la
                 npm --version
                 npm ci
-                npm start
+                npm test
                 npm run build
                 ls -la
                 '''
